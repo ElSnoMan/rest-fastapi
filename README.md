@@ -6,10 +6,10 @@ Python REST APIs with FastAPI
 1. Run the API server
 
     ```bash
-    $ uvicorn main:app --reload
+    $ uvicorn app.main:app --reload
     ```
 
-2. Hit the API by going to
+2. Hit the API
 
     * http://localhost:8000/items/5?q=somequery
    
