@@ -13,7 +13,7 @@ async def read_items():
 @router.get('/{item_id}', response_model=Item)
 async def read_item(item_id: str):
     for item in [Item(**item) for item in items_db]:
-        if item_id == item.id:
+        if item_id == str(item.id):
             return item
     raise HTTPException(status_code=404, detail='Item not found')
 
